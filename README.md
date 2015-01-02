@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Ematrix - The London Met Elearning Matrix
 = = = = = = = = = = = = = = = = = = = = = 
 
@@ -18,3 +19,9 @@ Custom templating
 
 
 
+=======
+ematrix_2015
+============
+
+Phase 4 Ematrix site. Skeleton, SASS, Cleaner Git. The final frontier of this work.
+>>>>>>> dd1ee78694c4d64df3a4becb63eee510e2b70e24
