@@ -1,0 +1,1 @@
+<input type="text" class="ce_text_field" name="<?= $name ?>" value="<?= htmlspecialchars($value) ?>" />

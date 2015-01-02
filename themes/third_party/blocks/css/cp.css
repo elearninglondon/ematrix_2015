@@ -1,0 +1,82 @@
+.blocksft {
+	background: #f5f6f5;
+	border: 1px solid #c9cfd4;
+}
+	.blocksft .blocksft-block {
+		position: relative;
+		padding: 1em;
+		padding-left: 16px;
+		border-bottom: 1px solid #c9cfd4;
+	}
+	.blocksft .blocksft-block.sortable-dragging {
+		background: #f5f6f5;
+		border: 1px solid #c9cfd4;
+	}
+	.blocksft .sortable-placeholder {
+		min-height: 26px;
+		background: #ecf1f4;
+		box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.5), inset 0 -8px 8px -8px rgba(0, 0, 0, 0.5);
+	}
+	.blocksft .blocksft-block.deleted {
+		display: none;
+	}
+		.blocksft .blocksft-block-handle {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 14px;
+			text-align: center;
+			padding-top: 16px;
+			cursor: move;
+		}
+		.blocksft .blocksft-actions {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+			/* Should apply to all action buttons, but don't apply it to move buttons right now. */
+			.blocksft .blocksft-actions button.remove {
+				border: none;
+				background: none;
+				text-indent: -9999px;
+				width: 16px;
+				height: 16px;
+				margin: 5px;
+				margin-left: 0;
+			}
+			.blocksft .blocksft-actions button.remove {
+				background: transparent url(../images/remove.svg) no-repeat 0 0;
+			}
+		.blocksft .blocksft-header {
+			margin-bottom: 1em;
+		}
+			#mainContent .blocksft .blocksft-block h3 {
+				margin: 0;
+				padding: 0;
+			}
+			.blocksft .blocksft-block .blocksft-instructions {
+
+			}
+				.blocksft .blocksft-block .blocksft-instructions:before {
+					content: "Instructions: ";
+					font-weight: bold;
+				}
+		.blocksft .blocksft-atom {
+			margin-top: 1em;
+		}
+			.blocksft .blocksft-atom .blocksft-atom-name {
+				font-weight: bold;
+			}
+			.blocksft .blocksft-atom .blocksft-atom-instructions {
+				font-style: italic;
+			}
+			.blocksft .blocksft-atom .blocksft-atomcontainer {
+				margin-top: 6px;
+			}
+			.blocksft .blocksft-atom .blocksft-atom-error .notice {
+				color: #ce0000;
+			}
+.blocksft .blocksft-new {
+	padding: 1em;
+}

@@ -1,0 +1,52 @@
+.ce_rich_editor .WysiHat-editor-toolbar{
+	border: 1px solid #d1d5de;
+	border-bottom: none;
+	margin: 0;
+}
+.ce_rich_editor .WysiHat-editor {
+	border: 1px solid #d1d5de;
+	padding: 3px;
+}
+
+.ce_rich_editor .WysiHat-editor:focus {
+	border: 1px solid black;
+	padding: 3px;
+	background-color: white !important;		
+}
+
+.ce_rich_editor textarea
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;	
+	border: 1px solid #d1d5de;
+	padding: 3px;		
+}
+
+.ce_rich_editor textarea:focus
+{
+	border: 1px solid black;	
+	padding: 3px;
+	background-color: white !important;	
+}
+
+.content_elements_icon_rich_text
+{
+	background-image: url(ico.png) !important;;
+}
+
+/* 
+=============================================================
+-------------------------------------------------------------
+	Matrix don't allow contenteditable attribute!!!
+	because "table.matrix { -webkit-user-select: none; }"
+-------------------------------------------------------------
+=============================================================	
+*/
+
+table.matrix .ce_rich_editor
+{
+	-webkit-user-select: auto;
+}
+

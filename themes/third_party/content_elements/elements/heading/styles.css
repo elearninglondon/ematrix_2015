@@ -1,0 +1,87 @@
+input.ce_heading_content
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;	
+	border: 1px solid #d1d5de;
+	padding: 0 3px;		
+	height: 30px;	
+	line-height: 30px;
+}
+
+input.ce_heading_content:focus
+{
+	border: 1px solid black;	
+	padding: 0 3px;
+	background-color: white !important;	
+}
+
+select.ce_heading_dropdown
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 160px;	
+	border: 1px solid #d1d5de;
+	padding: 3px;		
+	height: 30px;
+	line-height: 30px;
+	font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+    font-size: 110%;	
+    border-radius: 3px 3px 3px 3px;		
+    outline: none;
+    color: #5F6C74;
+}
+
+select.ce_heading_dropdown option
+{
+    padding: 5px;  
+	border-top: 1px solid #d1d5de;   
+    outline: none;	  
+}
+
+select.ce_heading_dropdown option.h1
+{
+    font-size: 150%;
+    color: #35424b;    
+}
+
+select.ce_heading_dropdown option.h2
+{
+    font-size: 135%;
+    color: #35424b;     
+}
+
+select.ce_heading_dropdown option.h3
+{
+    font-size: 125%;
+    font-weight: bold;
+}
+
+select.ce_heading_dropdown option.h4
+{
+    font-size: 110%;
+    font-weight: bold;
+    font-style: italic;
+    color: #676f75;
+}
+
+select.ce_heading_dropdown option.h5
+{
+    font-size: 110%;
+    font-weight: bold;
+    color: #676f75;
+}
+
+select.ce_heading_dropdown option.h4
+{
+    font-size: 110%;
+    color: #676f75;
+}
+
+
+.content_elements_icon_heading
+{
+	background-image: url(ico.png) !important;;
+}

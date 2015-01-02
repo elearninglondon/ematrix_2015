@@ -1,0 +1,21 @@
+textarea.ce_textarea
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;	
+	border: 1px solid #d1d5de;
+	padding: 3px;		
+}
+
+textarea.ce_textarea:focus
+{
+	border: 1px solid black;	
+	padding: 3px;
+	background-color: white !important;	
+}
+
+.content_elements_icon_textarea
+{
+	background-image: url(ico.png) !important;;
+}

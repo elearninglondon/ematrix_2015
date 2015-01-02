@@ -1,0 +1,91 @@
+
+<!-- JS foot scripts
+================================================== -->	
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+
+<script type='text/javascript' src="{global_assets}js/effects.core.js"></script>
+<script type='text/javascript'src="{global_assets}js/imagesloaded.pkgd.min.js"></script>
+<script type='text/javascript' src="{global_assets}js/masonry.pkgd.min.js"></script>
+
+
+
+
+	
+<script type='text/javascript'>
+	//toggle topmenu initialise
+jQuery(document).ready(function($) {
+
+	var $menu = $('#menu'),
+	  $menulink = $('.menu-link'),
+	  $menuTrigger = $('.has-submenu > a');
+
+	$menulink.click(function(e) {
+		e.preventDefault();
+		$menulink.toggleClass('active');
+		$menu.toggleClass('active');
+	});
+
+	$menuTrigger.click(function(e) {
+		e.preventDefault();
+		var $this = $(this);
+		$this.toggleClass('active').next('ul').toggleClass('active');
+	});
+
+});
+</script>
+
+
+<!--<script type='text/javascript'>
+var container = document.querySelector('#masonry-box');
+var msnry;
+// initialize Masonry after all images have loaded
+imagesLoaded( container, function() {
+  msnry = new Masonry( container );
+});</script>-->
+
+<!--<script>
+  var container = document.querySelector('#masonry-box');
+  var masonry = new Masonry(container, {
+    columnWidth: 10,
+    itemSelector: '.item'
+  });
+</script>-->
+
+
+<!--<script>
+  var container = document.querySelector('#masonry-box');
+  $container.imagesLoaded( function(){
+	$container.masonry({
+	columnWidth: 450,
+	itemSelector: '.item',
+	gutter: 5
+	});
+  });
+</script>-->
+
+
+<script>
+	
+	$(document).ready(function(){
+		
+  var $container = $('#masonry-box');
+  $container.imagesLoaded( function(){
+	$container.masonry({
+	columnWidth: 10,
+	itemSelector: '.item',
+	gutter: 5
+	});
+  });
+  
+	});
+</script>
+
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

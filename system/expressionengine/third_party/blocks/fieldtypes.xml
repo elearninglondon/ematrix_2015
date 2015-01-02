@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<fieldtypes xmlns="tag:eeblocks.com,2014:addon/fieldtypes">
+	<whitelist>
+		<!-- Built-in field types -->
+		<fieldtype name="checkboxes"/>
+		<fieldtype name="date"/>
+		<fieldtype name="file"/>
+		<fieldtype name="multi_select"/>
+		<fieldtype name="radio"/>
+		<fieldtype name="rte"/>
+		<fieldtype name="select"/>
+		<fieldtype name="text"/>
+		<fieldtype name="textarea"/>
+		<!-- Built-in field types that are currently unsupported, but
+		     hopefully will be in the future -->
+		<!--<fieldtype name="relationship"/>-->
+
+		<!-- External field types -->
+		<fieldtype name="expresso" version="ge:3.2 lt:4.0"/>
+		<fieldtype name="wygwam" version="ge:3.3 lt:4.0"/>
+	</whitelist>
+</fieldtypes>

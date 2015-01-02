@@ -1,0 +1,13 @@
+﻿.ce_wysiwyg_wrapper iframe { 
+	border: 1px solid #D1D5DE; 
+	position: relative; 
+	-webkit-box-sizing: 
+	border-box; 
+	-moz-box-sizing: border-box;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.content_elements_icon_wysiwyg
+{
+	background-image: url(ico.png) !important;
+}

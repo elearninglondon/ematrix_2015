@@ -1,0 +1,77 @@
+
+<!-- LISTINGS CODE
+	================================================== -->
+<!--#iso-list {
+	width: 970px;
+	/*border:1px solid red;
+	overflow:hidden;*/
+	display:block;
+	height:auto;
+	}
+/*	#iso-list:after {
+		content:'';
+		display:block;
+		clear:both;
+	}*/
+	.item {
+		float:left;
+		/*width:460px;*/
+	}-->	
+<style>
+#masonry-box {
+	clear:both;
+	display:block;
+}
+
+</style>
+
+
+ <div class="container">
+
+		<!-- section for skills and resources -->
+	<span id="resources" name="resources"class="anchor">.</span>
+	
+		<div class="sixteen columns">
+			
+			<h1 class="remove-bottom add-top">Skills & Resources</h1>
+			<h5>Or how to get ahead with clever stuff</h5>
+			<hr />
+			
+		</div>
+	
+	{exp:channel:entries channel="main" limit="1" disable="member_data|trackbacks" orderby="date"}
+	
+	<div id="masonry-box">
+		
+		<div class="eight columns item">
+			<h3><a href="{channel_url}entry/{url_title}">{title}</a></h3>	
+			{promo_image}
+			{exp:ce_img:pair src="{promo_image:image_file}" width="440" height="auto" crop="yes"}
+			<img src="{made}" alt="{promo_image:image_title}" width="{width}" height="{height}" />
+			{/exp:ce_img:pair}
+			<div class="image-credit-hover">{promo_image:image_title} | {promo_image:image_credit} | {promo_image:image_licence}</div>
+			{/promo_image}	
+			<br class="clear" />
+			{standfirst}
+		</div><!--/.eight columns-->
+	{/exp:channel:entries}
+	
+	
+	{exp:channel:entries channel="main" limit="10" disable="member_data|trackbacks" sort="desc" offset="1"}
+		
+		<div class="eight columns item">	
+			<h3><a href="{channel_url}entry/{url_title}">{title}</a></h3>
+			{promo_image}
+			{exp:ce_img:pair src="{promo_image:image_file}" width="180" height="auto" crop="yes"}
+			<img src="{made}" alt="{promo_image:image_title}" width="{width}" height="{height}" style="float:left;"/>
+			{/exp:ce_img:pair}
+			<div class="image-credit-hover">{promo_image:image_title} | {promo_image:image_credit} | {promo_image:image_licence}</div>
+			{/promo_image}
+			{standfirst}
+		</div><!--/.eight columns-->
+
+	{/exp:channel:entries}
+	</div><!--/#iso-list-->
+	
+	
+<!--END OF LISTINGS - WOW, WE MADE IT!! -->

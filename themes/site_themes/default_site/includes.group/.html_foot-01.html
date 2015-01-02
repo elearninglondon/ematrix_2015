@@ -1,0 +1,110 @@
+
+<!-- JS foot scripts
+================================================== -->	
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+
+<!--<script src="{global_assets}js/jquery.isotope.js"></script>-->
+<script src="{global_assets}js/effects.core.js"></script>
+<!--<script src="{global_assets}js/jquery.isotope.min.js"></script>-->
+<script src="{global_assets}js/masonry.pkgd.min.js"></script>
+
+
+
+<!--<script>
+    $(function(){
+      
+      var $container = $('#iso-list');
+      
+      $container.isotope({
+        itemSelector: '.list-item-layout'
+      });
+      
+    });
+  </script>-->	
+	
+	
+<script>
+	
+	//toggle topmenu initialise
+jQuery(document).ready(function($) {
+
+	var $menu = $('#menu'),
+	  $menulink = $('.menu-link'),
+	  $menuTrigger = $('.has-submenu > a');
+
+	$menulink.click(function(e) {
+		e.preventDefault();
+		$menulink.toggleClass('active');
+		$menu.toggleClass('active');
+	});
+
+	$menuTrigger.click(function(e) {
+		e.preventDefault();
+		var $this = $(this);
+		$this.toggleClass('active').next('ul').toggleClass('active');
+	});
+
+});
+</script>
+
+<!--<script type='text/javascript'>
+	$(function(){
+	
+		var $container = $('#iso-list');
+		
+		$container.imagesLoaded(function(){
+		$container.isotope();
+		});
+		
+		$container.isotope({
+		itemSelector: '.item'
+		});
+		
+		// $container.isotope.animate({ opacity: 1 }).fadeIn('slow');      
+		$('#iso-list').animate({height: "show", width: "show"}, 1500, "swing");
+		});
+		
+		$('#iso-list').isotope({
+		itemSelector: '.item',
+		masonry: {
+		columnWidth: 480,
+		gutterWidth: 5
+		}
+	
+	});
+</script>-->
+<!--<script type='text/javascript'>
+		$container.imagesLoaded(function(){
+		$container.masonry();
+		});
+		</script>
+-->
+<script>
+  var container = document.querySelector('#masonry');
+  var masonry = new Masonry(container, {
+   // columnWidth: 460,
+    itemSelector: '.item'
+  });
+</script>
+
+<!--<script>
+	$('#masonry').masonry({
+		itemSelector:'.item',
+		columnWidth: function(masonryWidth) {
+			return masonryWidth /5;
+		}
+	});
+		
+	
+</script>-->
+
+
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

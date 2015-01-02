@@ -1,0 +1,189 @@
+.ce_settings_toolbar_wrapper {	
+	margin: 10px 0 0 0;	
+	padding: 0 0 8px 0;
+	width: 100%;
+	background: url(../images/saw.png) bottom repeat-x; 	
+	box-shadow: 0px -1px 2px #D2DBE3;		
+}
+
+.ce_settings_toolbar_wrapper .ce_settings_toolbar
+{
+	padding: 20px 30px 10px 30px;
+	background: white;
+}
+
+.ce_settings_toolbar_wrapper .content_element_name,
+.ce_settings_toolbar_wrapper .content_element_type,
+.ce_settings_toolbar_wrapper .content_element_add
+{
+	margin-bottom: 10px; float: left; display: inline-block;
+}
+
+.ce_settings_wrapper
+{
+	position: relative;
+	padding: 10px 30px 10px 30px;
+	border-bottom: 1px dashed #d1d5de;
+	background: white;	
+}
+
+.ce_settings_wrapper .ce_settings_header label
+{
+	color: #5F6C74;
+	width: 200px;
+	float: left;
+	position: relative;
+	padding: 0;
+	font-weight: normal;	
+	font-size: 13px;
+	position: relative;
+}
+
+.ce_settings_wrapper .ce_settings_body
+{
+	clear: both;
+}
+
+.ce_settings_wrapper table
+{
+	margin: 0 !important;
+}
+
+table.mainTable td .ce_settings_wrapper .ce_settings_header
+{
+	width: 100%;
+	position: relative;
+}
+
+
+table.mainTable td .ce_settings_table{
+	background: none !important;
+	border: 0 !important;
+}
+
+table.mainTable td .ce_settings_table tr td {
+	padding: 5px 5px 0 0 !important;
+	border: 0 !important;
+	background: none !important;
+}
+
+table.mainTable td .ce_element_options
+{
+	border-radius: 3px 3px 3px 3px;
+	border: 1px solid #d1d5de;
+	margin: 10px 0;
+	padding: 10px;	
+	background: #f7f8fa;
+	box-shadow:inset 3px 3px 2px #fff;
+}
+
+table.mainTable td a.ce_element_options_off,
+table.mainTable td a.ce_element_options_on
+{
+	color: #969ead !important;
+} 
+
+table.mainTable td .content_elements_draggable_handler.
+table.mainTable td .ce_settings_wrapper .ce_settings_header .button_remove {
+	display: none;
+}
+
+table.mainTable td .ce_settings_wrapper.hover .content_elements_draggable_handler {
+	display: block;
+	background: url(../images/draggable.gif);	
+	height: 13px;
+	width: 9px;	
+	position: absolute;
+	left: 10px;
+	top: 13px;		
+	cursor: pointer;
+}
+
+
+table.mainTable td .ce_settings_wrapper.hover .ce_settings_header .button_remove
+{
+	display:block;
+	float: right;
+	color: red;
+	height: 7px;
+	width: 7px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold; 	
+	font-size: 10px;
+	cursor: pointer;
+	background: url(../images/btn_delete.png);
+	position: absolute;	
+	right: -18px;
+	top: 2px;		
+}
+
+.ce_settings_toolbar input[type=text], .ce_settings_toolbar select
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 160px;	
+	border: 1px solid #d1d5de;
+	padding: 5px;		
+	height: 28px;
+
+	font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+    font-size: 13px;	
+    border-radius: 3px 3px 3px 3px;		
+    outline: none;
+    color: #5F6C74;
+    float: left;
+    margin-right: 10px;
+}
+
+
+.ce_settings_toolbar .submit
+{
+	color: #4A575F;
+	text-decoration: none !important;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;	 	
+	padding: 6px 10px 6px 10px;
+	margin-right: 10px;
+	font-size: 11px;
+	background: #D2DBE3 url(../images/btn_default.jpg); 
+	box-shadow: 0px 0px 2px #D2DBE3;
+	height: 28px;
+}
+
+.ce_settings_toolbar .submit:hover
+{
+	color: black;
+	background: #D0D8E0 url(); 	
+}
+
+.ce_settings_toolbar_headline
+{
+	padding-bottom: 5px;
+}
+.ce_settings_toolbar_headline span
+{
+	font-size: 13px;	
+}
+
+/*---------------------------------------------------
+=====================================================
+	MATRIX
+=====================================================
+---------------------------------------------------*/
+
+td.matrix table.mainTable.content_element_settings_table th
+{
+	display: none;
+}
+
+td.matrix table.mainTable.content_element_settings_table td
+{
+	padding: 0; background-color: white; border: 0;
+}
+
+td.matrix table.mainTable td:last-child {
+    border-right: none !important;
+}

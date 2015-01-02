@@ -1,0 +1,119 @@
+
+<!-- ENTRY DETAIL TEST CODE
+	================================================== -->
+
+<div class="container">
+
+	<div class="sixteen columns">
+			
+	<div class="fourteen columns add-top offset-by-one">	
+			
+	<article>	
+			
+	{exp:channel:entries channel="main" limit="1" entry_id="5"}
+			
+		<h3>{title}</h3>
+		<hr />
+		
+		<!--<img src="images/dummy-image.png" style="width:800px;height:400px;float:left;margin:0 auto;" />-->
+		<!--{!--{exp:ce_img:single src="{url}"}--}
+		
+		{exp:ce_img:single src="{url}" border="5|4a2d14" save_type="png" rounded_corners="tl,50|br,50"}-->
+		
+		
+	{content}
+		{assets}
+		{files}
+		{exp:ce_img:pair src="{url}" width="800" height="400"}
+		<img src="{url}" alt="" width="{width}" height="{height}" style="float:left;margin:0 auto;" />
+		{/exp:ce_img:pair}
+		{/files}
+		{/assets}
+	{/content}
+       
+		
+		<div class="thirteen columns add-bottom ">	
+		<div class="pubdate entry">{entry_date format="%M %d, %Y"}</div>			
+		<h4>Author: {author}</h4>	
+		</div>
+			
+		<br class="clear" />
+		
+		<div class="standfirst-entry">
+		<p>{standfirst}</p>
+		</div>
+			
+		<p>{first_para}	</p>
+	
+	
+	{content}
+		
+		{heading}
+		{value}
+		{/heading}
+		
+		{editor}	      
+		<div>{value}</div>
+		{/editor}
+		
+		{textarea}
+		{if element_name=="Quote"}
+		<div class="one-third column pullquote">{value}</div>
+		{if:elseif element_name=="Quote Right"}<!--Embed Video-->
+		<div class="one-third column pullquote-right">{value}</div>
+		{if:else}
+		<div class="offset-by-two">{value}</div>
+		{/if}
+		{/textarea}			
+
+		{assets}
+		<ul>{files kind="pdf|word|excel|text|audio|video" var_prefix="download"}
+		
+		<li>{download:title}, {download:desc}, {download:author}: <a href="{url}">{download:filename}.{download:extension} </a>[{download:size}]</li>
+		
+		{/files}</ul>
+		{/assets}
+
+	</div><!--/.fourteen .columns .offset-by-one-->
+	
+		{if fieldpack_list}
+		{fieldpack_list}
+		<h5>Links</h5> 
+		<ul>
+		{values}
+		<li><a href="{item}">{item}</a></li>
+		{/values}
+		</ul>
+		{/fieldpack_list}
+		{/if}
+       
+		{!--{text_field}
+		{if element_name=="Link List Item"}
+		<ul>
+		<li>{value}</li>
+		</ul>
+		{if:else}<!--Other TextField-->
+		{value}
+		{/if}
+		{/text_field}--}
+
+	{/content}
+	
+<!--<style>.refs ul {display: inline; list-style: square inside; line-height:2px;padding:2px;margin:0 auto;}</style>-->
+
+		{if references}
+			<h5>Further Reading</h5>
+			
+			<ul>{references}
+			<li>{references:names}, {references:pub-year}, {references:title-work}, {references:publisher}, {references:country} </li>
+			{/references}</ul>
+		{/if}
+	
+	</div><!--/.sixteen .columns-->
+
+	{/exp:channel:entries}
+	
+	</article>
+
+		
+<!--END OF ENTRY DETAIL - WOW, WE MADE IT!! -->

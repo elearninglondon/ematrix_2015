@@ -1,0 +1,24 @@
+input.ce_text_field
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;	
+	border: 1px solid #d1d5de;
+	padding: 0 3px;		
+	height: 30px;	
+	line-height: 30px;
+}
+
+input.ce_text_field:focus
+{
+	border: 1px solid black;	
+	padding: 0 3px;	
+	background-color: white !important;		
+}
+
+
+.content_elements_icon_text_field
+{
+	background-image: url(ico.png) !important;;
+}
